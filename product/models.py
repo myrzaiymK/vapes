@@ -18,5 +18,16 @@ class Contact(models.Model):
     message = models.TextField()
     def __str__(self):
         return f"{self.name} {self.phone}"
-    
-# Create your models here.
+
+
+class Cart(models.Model):
+    product_id = models.ForeignKey(Product,verbose_name='Товар', on_delete=models.CASCADE)
+    number = models.IntegerField(default=0)
+    final_price = models.DecimalField(max_digits=9, decimal_places=2, verbose_name='Общая цена')
+    def __str__(self):
+        return "Продукт: {} (для корзины)".format(self.product.title)
+
+    def save(self, *args, **kwargs):
+        self.final_price = self.number * self.product_id.price
+        super().save(*args, **kwargs)
+

@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block content %}
 
 	<!-- header section start -->
@@ -42,6 +43,7 @@
     <div class="layout_padding gallery_section">
     	<div class="container">
     		<div class="row">
+
     			<div class="col-sm-4">
     				<div class="best_shoes">
     					<p class="best_text">Best Shoes </p>
@@ -56,122 +58,139 @@
     	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
     	    					</ul>
     						</div>
+							{% for i in product %}
     						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">60</span></div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Best Shoes </p>
-    					<div class="shoes_icon"><img src="{% static 'images/shoes-img5.png' %}"></div>
-    					<div class="star_text">
-    						<div class="left_part">
-    							<ul>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    					</ul>
-    						</div>
-    						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">400</span></div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Best Shoes </p>
-    					<div class="shoes_icon"><img src="{% static 'images/shoes-img6.png' %}"></div>
-    					<div class="star_text">
-    						<div class="left_part">
-    							<ul>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    					</ul>
-    						</div>
-    						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">50</span></div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="row">
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Sports Shoes</p>
-    					<div class="shoes_icon"><img src="{% static 'images/shoes-img7.png' %}"></div>
-    					<div class="star_text">
-    						<div class="left_part">
-    							<ul>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    					</ul>
-    						</div>
-    						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">70</span></div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Sports Shoes</p>
-    					<div class="shoes_icon"><img src="{% static 'images/shoes-img8.png' %}"></div>
-    					<div class="star_text">
-    						<div class="left_part">
-    							<ul>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    					</ul>
-    						</div>
-    						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">100</span></div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Sports Shoes</p>
-    					<div class="shoes_icon"><img src="{% static 'images/shoes-img9.png' %}i"></div>
-    					<div class="star_text">
-    						<div class="left_part">
-    							<ul>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>
-    	    					</ul>
-    						</div>
-    						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">90</span></div>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="buy_now_bt">
-    			<button class="buy_text">Buy Now</button>
-    		</div>
-    	</div>
-    </div>
-   	<!-- New Arrivals section end -->
+    							<div class="shoes_price">$ <span style="color: #ff4e5b;">{{ i.price }}</span></div>
+								<a id="1" class="ajaxbuy btn btn-default w100" href="{% url 'detail' i.id %}" onclick="dataLayer.push({'event': 'addToCart','ecommerce': {'currencyCode': 'USD','add': {'products': [{'name': 'Сотовый телефон Apple iPhone 13 Pro 256GB синий','id': '97917','price': '1237.00','brand': 'Apple iPhone','category': 'Мобильные телефоны','quantity': 1}]}}});">В корзину</a>
 
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+<!--    			<div class="col-sm-4">-->
+<!--    				<div class="best_shoes">-->
+<!--    					<p class="best_text">Best Shoes </p>-->
+<!--    					<div class="shoes_icon"><img src="{% static 'images/shoes-img5.png' %}"></div>-->
+<!--    					<div class="star_text">-->
+<!--    						<div class="left_part">-->
+<!--    							<ul>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    					</ul>-->
+<!--    						</div>-->
+<!--    						<div class="right_part">-->
+<!--    							<div class="shoes_price">$ <span style="color: #ff4e5b;">400</span></div>-->
+<!--								<a id="2" class="ajaxbuy btn btn-default w100" href="/Carts.html" onclick="dataLayer.push({'event': 'addToCart','ecommerce': {'currencyCode': 'USD','add': {'products': [{'name': 'Сотовый телефон Apple iPhone 13 Pro 256GB синий','id': '97917','price': '1237.00','brand': 'Apple iPhone','category': 'Мобильные телефоны','quantity': 1}]}}});">В корзину</a>-->
+<!--    						</div>-->
+<!--    					</div>-->
+<!--    				</div>-->
+<!--    			</div>-->
+<!--    			<div class="col-sm-4">-->
+<!--    				<div class="best_shoes">-->
+<!--    					<p class="best_text">Best Shoes </p>-->
+<!--    					<div class="shoes_icon"><img src="{% static 'images/shoes-img6.png' %}"></div>-->
+<!--    					<div class="star_text">-->
+<!--    						<div class="left_part">-->
+<!--    							<ul>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    					</ul>-->
+<!--    						</div>-->
+<!--    						<div class="right_part">-->
+<!--    							<div class="shoes_price">$ <span style="color: #ff4e5b;">50</span></div>-->
+<!--								<a id="3" class="ajaxbuy btn btn-default w100" href="/Carts.html" onclick="dataLayer.push({'event': 'addToCart','ecommerce': {'currencyCode': 'USD','add': {'products': [{'name': 'Сотовый телефон Apple iPhone 13 Pro 256GB синий','id': '97917','price': '1237.00','brand': 'Apple iPhone','category': 'Мобильные телефоны','quantity': 1}]}}});">В корзину</a>-->
+
+
+<!--    						</div>-->
+<!--    					</div>-->
+<!--    				</div>-->
+<!--    			</div>-->
+<!--    		</div>-->
+<!--    		<div class="row">-->
+<!--					{% for i in product %}-->
+
+<!--    			<div class="col-sm-4">-->
+<!--    				<div class="best_shoes">-->
+<!--    					<p class="best_text">Sports Shoes</p>-->
+<!--    					<div class="shoes_icon"><img src="{% static 'images/shoes-img7.png' %}"></div>-->
+<!--    					<div class="star_text">-->
+<!--    						<div class="left_part">-->
+<!--    							<ul>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    					</ul>-->
+<!--    						</div>-->
+<!--    						<div class="right_part">-->
+<!--    							<div class="shoes_price">$ <span style="color: #ff4e5b;">70</span></div>-->
+<!--								<a id="4" class="ajaxbuy btn btn-default w100" href="/Carts.html" onclick="dataLayer.push({'event': 'addToCart','ecommerce': {'currencyCode': 'USD','add': {'products': [{'name': 'Сотовый телефон Apple iPhone 13 Pro 256GB синий','id': '97917','price': '1237.00','brand': 'Apple iPhone','category': 'Мобильные телефоны','quantity': 1}]}}});">В корзину</a>-->
+
+<!--    						</div>-->
+<!--    					</div>-->
+<!--    				</div>-->
+<!--    			</div>-->
+<!--    			<div class="col-sm-4">-->
+<!--    				<div class="best_shoes">-->
+<!--    					<p class="best_text">Sports Shoes</p>-->
+<!--    					<div class="shoes_icon"><img src="{% static 'images/shoes-img8.png' %}"></div>-->
+<!--    					<div class="star_text">-->
+<!--    						<div class="left_part">-->
+<!--    							<ul>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    					</ul>-->
+<!--    						</div>-->
+<!--    						<div class="right_part">-->
+<!--    							<div class="shoes_price">$ <span style="color: #ff4e5b;">100</span></div>-->
+<!--								<a id="5" class="ajaxbuy btn btn-default w100" href="/Carts.html" onclick="dataLayer.push({'event': 'addToCart','ecommerce': {'currencyCode': 'USD','add': {'products': [{'name': 'Сотовый телефон Apple iPhone 13 Pro 256GB синий','id': '97917','price': '1237.00','brand': 'Apple iPhone','category': 'Мобильные телефоны','quantity': 1}]}}});">В корзину</a>-->
+
+<!--    						</div>-->
+<!--    					</div>-->
+<!--    				</div>-->
+<!--    			</div>-->
+<!--    			<div class="col-sm-4">-->
+<!--    				<div class="best_shoes">-->
+<!--    					<p class="best_text">Sports Shoes</p>-->
+<!--    					<div class="shoes_icon"><img src="{% static 'images/shoes-img9.png' %}"></div>-->
+<!--    					<div class="star_text">-->
+<!--    						<div class="left_part">-->
+<!--&lt;!&ndash;    							<ul>&ndash;&gt;-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    						<li><a href="#"><img src="{% static 'images/star-icon.png' %}"></a></li>-->
+<!--    	    					</ul>-->
+<!--    						</div>-->
+<!--    						<div class="right_part">-->
+<!--    							<div class="shoes_price">$ <span style="color: #ff4e5b;">90</span></div>-->
+<!--								<a id="6" class="" href="/Carts.html" onclick="dataLayer.push({'event': 'addToCart','ecommerce': {'currencyCode': 'USD','add': {'products': [{'name': 'Сотовый телефон Apple iPhone 13 Pro 256GB синий','id': '97917','price': '1237.00','brand': 'Apple iPhone','category': 'Мобильные телефоны','quantity': 1}]}}});">В корзину</a>-->
+
+<!--    						</div>-->
+<!--    					</div>-->
+<!--    				</div>-->
+<!--    			</div>-->
+<!--    		</div>-->
+<!--    		<div class="buy_now_bt">-->
+<!--    			<button class="buy_text">Buy Now</button>-->
+<!--    		</div>-->
+<!--    	</div>-->
+<!--    </div>-->
+   	<!-- New Arrivals section end -->
+		{% endfor %}
+		{% endfor %}
 	   {% endblock %}
 
 
